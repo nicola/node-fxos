@@ -10,14 +10,14 @@ The aim of these components is to use the [Firefox Remote Debugging Protocol](ht
 
 ## The modules
 
-- [x] [fx-ports](https://github.com/nicola/fx-ports) Find Firefox(OS) listening debugging ports
-- [x] [fxos-simulators](https://github.com/nicola/fxos-simulators) Find FirefoxOS simulators binaries
-- [x] [fxos-start](https://github.com/nicola/fxos-start) Start a FirefoxOS simulator
-- [x] [fxos-deploy](https://github.com/nicola/fxos-deploy) Deploy a webapp to FirefoxOS
-- [x] [fxos-findapp](https://github.com/nicola/fxos-findapp) Find an app on FirefoxOS given a manifest
-- [x] [fxos-reloadcss](https://github.com/nicola/fxos-reloadcss) Live-reload CSS in FirefoxOS
-- [ ] fxos-screenshot
-- [ ] fxos-console
+- [x] **[fx-ports](https://github.com/nicola/fx-ports)** - Find Firefox(OS) listening debugging ports
+- [x] **[fxos-simulators](https://github.com/nicola/fxos-simulators)** - Find FirefoxOS simulators binaries
+- [x] **[fxos-start](https://github.com/nicola/fxos-start)** - Start a FirefoxOS simulator
+- [x] **[fxos-deploy](https://github.com/nicola/fxos-deploy)** - Deploy a webapp to FirefoxOS
+- [x] **[fxos-findapp](https://github.com/nicola/fxos-findapp)** - Find an app on FirefoxOS given a manifest
+- [x] **[fxos-reloadcss](https://github.com/nicola/fxos-reloadcss)** - Live-reload CSS in FirefoxOS
+- [ ] **fxos-screenshot**
+- [ ] **fxos-console**
 
 ## Projects using fxos modules
 
