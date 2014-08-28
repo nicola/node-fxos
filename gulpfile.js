@@ -7,9 +7,13 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var footer = require('gulp-footer');
 var header = require('gulp-header');
+var stylus = require('gulp-stylus');
+var nib = require('nib');
+var connect = require('gulp-connect');
 
 var paths = {
   site: 'site/**/*',
+  styles: 'site/media/*.stylus',
   dist: 'dist/**/*',
   pages: 'pages/*.md'
 };
@@ -40,9 +44,23 @@ gulp.task('website', function () {
 
 });
 
-gulp.task('deploy', ['website'],  function () {
-    gulp.src("./dist/**/*")
-        .pipe(deploy());
+gulp.task('styles', function () {
+  gulp.src(paths.styles)
+    .pipe(stylus({use: [nib()]}))
+    .pipe(gulp.dest('./dist/media/'));
 });
 
-gulp.task('default', ['deploy']);
+gulp.task('deploy',  function () {
+  gulp.src("./dist/**/*")
+      .pipe(deploy());
+});
+
+gulp.task('connect', function() {
+  connect.server({
+    root: 'dist',
+    livereload: true,
+    port: 8001
+  });
+});
+
+gulp.task('default', ['styles', 'connect']);
