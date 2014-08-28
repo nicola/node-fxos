@@ -8,7 +8,7 @@ Instead of having a big tool that does everything, the idea here is to have very
 
 The aim of these components is to use the [Firefox Remote Debugging Protocol](https://wiki.mozilla.org/Remote_Debugging_Protocol) with [harthur/firefox-client](https://github.com/harthur/firefox-client).
 
-## The modules
+## Modules
 
 - [x] **[fx-ports](https://github.com/nicola/fx-ports)** - Find Firefox(OS) listening debugging ports
 - [x] **[fxos-simulators](https://github.com/nicola/fxos-simulators)** - Find FirefoxOS simulators binaries
