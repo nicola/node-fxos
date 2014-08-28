@@ -113,8 +113,6 @@ i, em {
   background: #FFFFFF;
 }
 #modules {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -126,16 +124,24 @@ i, em {
     width:50%;
   }
   @media (max-width: 1024px) {
-    width: 90%;
     .module {
       width: 50%;
     }
   }
   @media (max-width: 768px) {
-    width: 100%;
     .module {
       width: 100%;
     }
+  }
+}
+#modules, #examples {
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }
 .module {
