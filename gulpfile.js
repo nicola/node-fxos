@@ -10,7 +10,6 @@ var header = require('gulp-header');
 var stylus = require('gulp-stylus');
 var nib = require('nib');
 var connect = require('gulp-connect');
-var mainBowerFiles = require('main-bower-files');
 
 var paths = {
   site: 'site/*.html',
@@ -64,14 +63,9 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('vendor', function() {
-  gulp.src('bower_components/**/*')
-    .pipe(gulp.dest('./dist/vendor'));
-});
-
 gulp.task('watch', function() {
   gulp.watch(paths.styles, ['styles']);
   gulp.watch(paths.site, ['website']);
   gulp.watch(paths.pages, ['website']);
 });
-gulp.task('default', ['website', 'styles', 'connect', 'watch', 'vendor']);
+gulp.task('default', ['website', 'styles', 'connect', 'watch']);

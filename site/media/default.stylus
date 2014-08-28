@@ -112,6 +112,18 @@ i, em {
 #sublanding {
   background: #FFFFFF;
 }
+
+#modules, #examples {
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
 #modules {
   display: flex;
   flex-wrap: wrap;
@@ -132,16 +144,6 @@ i, em {
     .module {
       width: 100%;
     }
-  }
-}
-#modules, #examples {
-  width: 80%;
-  margin: 0 auto;
-  @media (max-width: 1024px) {
-    width: 90%;
-  }
-  @media (max-width: 768px) {
-    width: 100%;
   }
 }
 .module {
