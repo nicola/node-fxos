@@ -3,8 +3,27 @@
   <title></title>
 </head>
 <body>
-<section><h1 id="hello">Hello</h1>
-<p>World</p>
+<section><h1 id="node-fxos">node-fxos</h1>
+<p>Simplify interaction between mankind and FirefoxOS during webapps development</p>
+<h2 id="idea">Idea</h2>
+<p>Instead of having a big tool that does everything, the idea here is to have very little libraries that do one thing well, so that you can roll your own command line tool, deployment and testing strategies and gulp/grunt script to enhance your Firefox OS development experience.</p>
+<p>The aim of these components is to use the <a href="https://wiki.mozilla.org/Remote_Debugging_Protocol">Firefox Remote Debugging Protocol</a> with <a href="https://github.com/harthur/firefox-client">harthur/firefox-client</a>.</p>
+<h2 id="the-modules">The modules</h2>
+<ul>
+<li>[x] <strong><a href="https://github.com/nicola/fx-ports">fx-ports</a></strong> - Find Firefox(OS) listening debugging ports</li>
+<li>[x] <strong><a href="https://github.com/nicola/fxos-simulators">fxos-simulators</a></strong> - Find FirefoxOS simulators binaries</li>
+<li>[x] <strong><a href="https://github.com/nicola/fxos-start">fxos-start</a></strong> - Start a FirefoxOS simulator</li>
+<li>[x] <strong><a href="https://github.com/nicola/fxos-deploy">fxos-deploy</a></strong> - Deploy a webapp to FirefoxOS</li>
+<li>[x] <strong><a href="https://github.com/nicola/fxos-findapp">fxos-findapp</a></strong> - Find an app on FirefoxOS given a manifest</li>
+<li>[x] <strong><a href="https://github.com/nicola/fxos-reloadcss">fxos-reloadcss</a></strong> - Live-reload CSS in FirefoxOS</li>
+<li>[ ] <strong>fxos-screenshot</strong></li>
+<li>[ ] <strong>fxos-console</strong></li>
+</ul>
+<h2 id="projects-using-fxos-modules">Projects using fxos modules</h2>
+<ul>
+<li><strong><a href="https://github.com/nicola/gulp-firefoxos-example">FirefoxOS Gulp Example</a></strong>: Gulpfile.js using node-fxos modules</li>
+<li><strong>Fireplay Atom</strong>: Plugin for Atom for live editing FirefoxOS apps&#39; HTML and CSS</li>
+</ul>
 </section>
 </body>
 </html>
