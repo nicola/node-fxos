@@ -27,7 +27,7 @@ h1 {
 
 article {
   color: #444;
-  padding: 1em 2em;
+  padding: 1em 1em;
   word-wrap: break-word;
 }
 
@@ -155,5 +155,6 @@ i, em {
   pre {
     background: #FFF;
     padding: 10px 20px;
+    font-size: 0.9em;
   }
 }

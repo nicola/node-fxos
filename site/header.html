@@ -28,11 +28,10 @@
     <p>Deploy an app to FirefoxOS</p>
 
     <pre>
-      var start = require('fxos-deploy');
-      deploy('./manifest.webapp')
-        .then(function(appId) {
-        });
-    </pre>
+var start = require('fxos-deploy');
+deploy('./manifest.webapp')
+  .then(function(appId) {
+  });</pre>
 
   </article>
 
@@ -41,11 +40,10 @@
     <p>Starts a FirefoxOS simulator</p>
 
     <pre>
-      var start = require('fxos-start');
-      start({port: port})
-        .then(function(client) {
-        });
-    </pre>
+var start = require('fxos-start');
+start({port: port})
+  .then(function(client) {
+  });</pre>
 
   </article>
 
@@ -54,11 +52,10 @@
     <p>Find binary of FirefoxOS simulators</p>
 
     <pre>
-      var simulators = require('fxos-simulators');
-      simulators(function(sims) {
+var simulators = require('fxos-simulators');
+simulators(function(sims) {
 
-      });
-    </pre>
+});</pre>
 
   </article>
 
@@ -67,9 +64,8 @@
     <p>Find Firefox Desktop and OS opened ports</p>
 
     <pre>
-      var ports = require('fx-ports');
-      ports();
-    </pre>
+var ports = require('fx-ports');
+ports();</pre>
 
   </article>
 
@@ -78,11 +74,10 @@
     <p>Live reload css on FirefoxOS</p>
 
     <pre>
-      var reloadcss = require('fxos-reloadcss');
-      reloadcss('./manifest.webapp')
-        .then(function(reloaded) {
-        });
-    </pre>
+var reloadcss = require('fxos-reloadcss');
+reloadcss('./manifest.webapp')
+  .then(function(reloaded) {
+  });</pre>
 
   </article>
 
@@ -91,11 +86,10 @@
     <p>Find the app given a manifest</p>
 
     <pre>
-      var findapp = require('fxos-findapp');
-      findapp('./manifest.webapp')
-        .then(function(app) {
-        });
-    </pre>
+var findapp = require('fxos-findapp');
+findapp('./manifest.webapp')
+  .then(function(app) {
+  });</pre>
 
   </article>
 
@@ -107,4 +101,4 @@
     <li><strong><a href="https://github.com/nicola/gulp-firefoxos-example">FirefoxOS Gulp Example</a></strong>: Gulpfile.js using node-fxos modules</li>
     <li><strong>Fireplay Atom</strong>: Plugin for Atom for live editing FirefoxOS apps&#39; HTML and CSS</li>
   </ul>
-</section>
+</section><section>
