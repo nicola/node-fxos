@@ -1,0 +1,29 @@
+{
+  "name": "node-fxos",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicola/node-fxos.git"
+  },
+  "author": "Nicola Greco <me@nicola.io> (http://nicolagreco.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicola/node-fxos/issues"
+  },
+  "homepage": "https://github.com/nicola/node-fxos",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-concat": "^2.3.4",
+    "gulp-footer": "^1.0.5",
+    "gulp-gh-pages": "^0.3.3",
+    "gulp-header": "^1.0.5",
+    "gulp-markdown": "^1.0.0",
+    "gulp-rename": "^1.2.0",
+    "pygmentize-bundled": "^2.1.1"
+  }
+}
