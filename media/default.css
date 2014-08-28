@@ -9,6 +9,9 @@ body {
   line-height: 1.4em;
   margin: 0;
 }
+body {
+  background: #e7e7e7;
+}
 h1,
 h2,
 h3,
@@ -56,7 +59,7 @@ em {
   height: 100%;
   z-index: 100;
   background: #b90000;
-  color: #fff;
+  color: #e7e7e7;
 }
 #landing header {
   position: absolute;
@@ -72,4 +75,33 @@ em {
   font-size: 60px;
   line-height: 60px;
   font-style: normal;
+}
+#landing footer {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+}
+#landing footer a {
+  background: #fff;
+  color: #b90000;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#landing footer ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 20%;
+  text-align: center;
+  list-style: none;
+}
+#landing footer ul li {
+  display: inline;
+}
+#landing footer ul li:after {
+  content: " |";
+  opacity: 0.2;
+}
+#landing footer ul li:last-child:after {
+  content: "";
 }
