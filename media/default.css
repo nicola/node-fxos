@@ -105,3 +105,50 @@ em {
 #landing footer ul li:last-child:after {
   content: "";
 }
+#sublanding {
+  background: #fff;
+}
+#modules {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+#modules .module {
+  flex-grow: 1;
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  #modules {
+    width: 90%;
+  }
+  #modules .module {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #modules {
+    width: 100%;
+  }
+  #modules .module {
+    width: 100%;
+  }
+}
+.module h1 {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 10px;
+}
+.module h1 a {
+  color: #b90000;
+  text-decoration: none;
+}
+.module pre {
+  background: #fff;
+  padding: 10px 20px;
+}
