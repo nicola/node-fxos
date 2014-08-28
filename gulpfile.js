@@ -12,7 +12,7 @@ var nib = require('nib');
 var connect = require('gulp-connect');
 
 var paths = {
-  site: 'site/**/*',
+  site: 'site/*.html',
   styles: 'site/media/*.stylus',
   dist: 'dist/**/*',
   pages: 'pages/*.md'
@@ -63,4 +63,9 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('default', ['styles', 'connect']);
+gulp.task('watch', function() {
+  gulp.watch(paths.styles, ['styles']);
+  gulp.watch(paths.site, ['website']);
+  gulp.watch(paths.pages, ['website']);
+});
+gulp.task('default', ['website', 'styles', 'connect', 'watch']);

@@ -3,11 +3,17 @@
   -moz-boz-sizing: border-box;
 }
 
+$branding-lead = #B90000;
+
 html, body {
   font-family: 'Fira Sans', sans-serif;
   height: 100%;
   line-height: 1.4em;
   margin: 0;
+}
+
+body {
+  background: #E7E7E7;
 }
 
 h1, h2, h3, h4, h5, strong {
@@ -17,68 +23,6 @@ h1, h2, h3, h4, h5, strong {
 h1 {
   font-size: 2em;
   margin: 2rem 0;
-}
-
-.main {
-  height: 100%;
-}
-.main header {
-  background: #EAEFF2;
-  overflow: auto;
-  padding: 1rem 0;
-  max-width: 90%;
-}
-
-.logo {
-  color: #404145;
-  font-weight: 500;
-  white-space: nowrap;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-.logo h1 {
-  background-image: url(/media/img/logo.svg);
-  background-position: 0 50%;
-  background-repeat: no-repeat;
-  background-size: 48px auto;
-  display: inline-block;
-  margin: 1rem 0;
-  padding: 1rem 0 1rem 3.4rem;
-}
-
-nav ul {
-  padding: 0;
-}
-nav div, nav a {
-  padding: .25rem 2rem;
-}
-nav a, nav a:link {
-  color: #00539F;
-  text-decoration: none;
-  display: block;
-  background: transparent;
-}
-nav a.active {
-  background: #D4DDE4;
-}
-nav ul ul a {
-  padding-left: 3rem;
-}
-nav li {
-  list-style-type: none;
-}
-
-.menu {
-  background: #fff;
-  border-radius: .3em;
-  border: 1px solid black;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: .3em;
-  position: fixed;
-  right: 1em;
-  top: 1em;
 }
 
 article {
@@ -112,4 +56,104 @@ table tr:nth-child(2n) {
 /* until Fira is working */
 i, em {
   font-style: normal;
+}
+
+#landing {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: $branding-lead;
+  color: #E7E7E7;
+  header {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+
+    h1, h3 {
+      text-align: center;
+    }
+    h1 {
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 60px;
+      font-style: normal;
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    a {
+      background: #fff;
+      color: $branding-lead;
+      padding: 10px 15px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 20%;
+      text-align: center;
+      list-style: none;
+      li {
+        display: inline;
+        &:after {
+          content:" |";
+          opacity: 0.2;
+        }
+        &:last-child:after {
+          content: "";
+        }
+      }
+    }
+  }
+}
+#sublanding {
+  background: #FFFFFF;
+}
+#modules {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  .module {
+    flex-grow: 1;
+    width:50%;
+  }
+  @media (max-width: 1024px) {
+    width: 90%;
+    .module {
+      width: 50%;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    .module {
+      width: 100%;
+    }
+  }
+}
+.module {
+  h1 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 10px;
+    a {
+      color: $branding-lead;
+      text-decoration: none;
+    }
+  }
+  p {
+
+  }
+  pre {
+    background: #FFF;
+    padding: 10px 20px;
+  }
 }
