@@ -26,7 +26,7 @@ h1 {
 }
 article {
   color: #444;
-  padding: 1em 2em;
+  padding: 1em 1em;
   word-wrap: break-word;
 }
 article section {
@@ -108,9 +108,24 @@ em {
 #sublanding {
   background: #fff;
 }
-#modules {
+#modules,
+#examples {
   width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  #modules,
+  #examples {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  #modules,
+  #examples {
+    width: 100%;
+  }
+}
+#modules {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -123,17 +138,11 @@ em {
   width: 50%;
 }
 @media (max-width: 1024px) {
-  #modules {
-    width: 90%;
-  }
   #modules .module {
     width: 50%;
   }
 }
 @media (max-width: 768px) {
-  #modules {
-    width: 100%;
-  }
   #modules .module {
     width: 100%;
   }
@@ -151,4 +160,5 @@ em {
 .module pre {
   background: #fff;
   padding: 10px 20px;
+  font-size: 0.9em;
 }
