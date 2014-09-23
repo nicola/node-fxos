@@ -2,6 +2,8 @@
 
 Simplify interaction between mankind and FirefoxOS during webapps development
 
+See the presentation [here](http://nicola.github.io/node-fxos-presentation)
+
 ## Idea
 
 Instead of having a big tool that does everything, the idea here is to have very little libraries that do one thing well, so that you can roll your own command line tool, deployment and testing strategies and gulp/grunt script to enhance your Firefox OS development experience.
@@ -17,7 +19,7 @@ The aim of these components is to use the [Firefox Remote Debugging Protocol](ht
 - [x] **[fxos-findapp](https://github.com/nicola/fxos-findapp)** - Find an app on FirefoxOS given a manifest
 - [x] **[fxos-reloadcss](https://github.com/nicola/fxos-reloadcss)** - Live-reload CSS in FirefoxOS
 - [ ] **fxos-screenshot**
-- [ ] **fxos-console**
+- [x] **fxos-console**
 
 ## Projects using fxos modules
 
