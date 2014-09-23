@@ -2,6 +2,8 @@
 
 Simplify interaction between mankind and FirefoxOS during webapps development
 
+![presentation](https://raw.githubusercontent.com/nicola/node-fxos/master/site/media/presentation.png)
+
 See the presentation [here](http://nicola.github.io/node-fxos-presentation)
 
 ## Idea
