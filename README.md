@@ -22,10 +22,13 @@ The aim of these components is to use the [Firefox Remote Debugging Protocol](ht
 - [x] **[fxos-deploy](https://github.com/nicola/fxos-deploy)** - Deploy a webapp to FirefoxOS
 - [x] **[fxos-findapp](https://github.com/nicola/fxos-findapp)** - Find an app on FirefoxOS given a manifest
 - [x] **[fxos-reloadcss](https://github.com/nicola/fxos-reloadcss)** - Live-reload CSS in FirefoxOS
+- [x] **[fxos-connect](https://github.com/nicola/fxos-connect)** - Connect to an open simulator or start a new one
+- [x] **[fxos-console](https://github.com/nicola/fxos-console)** - Bind interactive FXOS console
+- [x] **[fxos-console-logs](https://github.com/nicola/fxos-console-logs)** - Bind console.log-s to node
 - [ ] **fxos-screenshot**
-- [x] **fxos-console**
 
 ## Projects using fxos modules
 
 - **[FirefoxOS Gulp Example](https://github.com/nicola/gulp-firefoxos-example)**: Gulpfile.js using node-fxos modules
+- **[FirefoxOS Grunt Example](https://github.com/Mte90/grunt-firefoxos-example)**: Gruntfile.js using node-fxos modules
 - **Fireplay Atom**: Plugin for Atom for live editing FirefoxOS apps' HTML and CSS
