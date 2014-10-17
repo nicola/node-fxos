@@ -7,6 +7,7 @@ Simplify interaction between mankind and FirefoxOS during webapps development
 - node-fxos [website](http://nicola.github.io/node-fxos)
 - Presentation [slides](http://nicola.github.io/node-fxos-presentation)
 - Video [Mozilla SF - Nicola Greco, node-fxos ninja tools for Firefox OS development](https://air.mozilla.org/nicola-greco-node-fxos-ninja-tools-for-firefoxos-development/)
+- Discuss on [HackerNews](https://news.ycombinator.com/item?id=8472673)
 
 ## Idea
 
